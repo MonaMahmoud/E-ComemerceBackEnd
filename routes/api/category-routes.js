@@ -69,7 +69,7 @@ router.put('/:id', async(req, res) => {
         // The updated data (category) is then sent back to handler that dispatched the fetch request.
         res.status(200).json(category);
     } catch (err) {
-        res.status(500).json(err);
+        res.status(500).json(err.message);
     }
 
 });
